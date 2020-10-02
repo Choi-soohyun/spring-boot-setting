@@ -35,4 +35,9 @@ public class MemoryMemberRepository implements MemberRepository {
     public List<Member> findAll() {
         return new ArrayList<>(store.values()); // list로 형변환이 되는구나 와.. 엄청 간단하네 ㅋㅋ () 안에가 저런 역할을 하는 거였구나.
     }
+
+    // 설명4)
+    public void clearStore() {
+        store.clear();
+    }
 }
